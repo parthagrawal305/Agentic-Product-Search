@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+qdrant_data/
+Study_Sheet.md
+Project_Overview.md
+git_time_travel.py
+.DS_Store
