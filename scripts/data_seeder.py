@@ -30,45 +30,76 @@ qdrant.set_model("BAAI/bge-small-en-v1.5")
 
 
 # 3. Generate Synthetic Indian E-commerce Data
-categories = ["Winter Jacket", "Kurta Set", "Silk Saree", "Running Shoes", "Cotton T-Shirt", "Denim Jeans", "Formal Blazer"]
-colors = ["Red", "Navy Blue", "Black", "Olive Green", "Mustard Yellow", "White", "Maroon"]
-sizes = ["S", "M", "L", "XL", "Free Size", "UK 8", "UK 9"]
+categories = [
+    ("Winter Jacket", "clothing", True),
+    ("Denim Jeans", "clothing", True),
+    ("Running Shoes", "footwear", True),
+    ("Cotton T-Shirt", "clothing", True),
+    ("Formal Blazer", "clothing", True),
+    ("Sun Hat", "accessories", True),
+    ("Travel Backpack", "accessories", False),
+    ("Graphite Pencil Set", "stationery", False),
+    ("Wireless Earbuds", "electronics", False),
+    ("Sunglasses", "accessories", True)
+]
+
+colors = ["Red", "Navy Blue", "Black", "Olive Green", "Mustard Yellow", "White", "Maroon", "Grey", "Cyan", "Pink"]
+sizes_clothing = ["S", "M", "L", "XL"]
+sizes_shoes = ["UK 7", "UK 8", "UK 9", "UK 10", "UK 6"]
 
 products = []
 
-for i in range(150):
-    cat = random.choice(categories)
-    color = random.choice(colors)
-    size = random.choice(sizes)
-    
-    # Generate realistic INR pricing based on category
-    if "Jacket" in cat or "Blazer" in cat or "Saree" in cat:
-        price = random.randint(1500, 5000)
-    elif "Shoes" in cat:
-        price = random.randint(2000, 4000)
-    else:
-        price = random.randint(400, 1200)
+for cat_name, cat_type, split_gender in categories:
+    for i in range(10):  # 10 products per category
+        color = random.choice(colors)
         
-    # Ensure test case jacket exists
-    if i == 0:
-        cat = "Winter Jacket"
-        color = "Black"
-        price = 99
-        title = "Ultra-Light Black Winter Jacket (Clearance)"
-    else:
-        title = f"{color} {cat}"
+        # Gender assignment
+        if split_gender:
+            gender = "Men's" if i < 5 else "Women's"
+        else:
+            gender = "Unisex"
+            
+        # Size assignment
+        if cat_type == "clothing":
+            size = random.choice(sizes_clothing)
+        elif cat_type == "footwear":
+            size = random.choice(sizes_shoes)
+        else:
+            size = "Standard Size"
+            
+        # Pricing
+        if cat_type == "electronics": price = random.randint(1500, 15000)
+        elif cat_type == "stationery": price = random.randint(50, 500)
+        elif "Jacket" in cat_name or "Blazer" in cat_name: price = random.randint(1500, 5000)
+        elif cat_type == "footwear": price = random.randint(2000, 4000)
+        else: price = random.randint(400, 1500)
+        
+        title = f"{gender} {color} {cat_name}"
+        desc = f"Premium quality {color.lower()} {cat_name.lower()} for {gender.lower()}. Perfect for everyday use. "
+        if size != "Standard Size":
+            desc += f"Available in size {size}."
+            
+        # Add a weight
+        weight_g = random.randint(100, 800)
+        desc += f" Weight: {weight_g}g."
 
-    prod = {
-        "id": str(uuid.uuid4()),
-        "title": title,
-        "description": f"Premium quality {color.lower()} {cat.lower()}. Perfect for everyday wear or special occasions. Available in size {size}.",
-        "price_inr": price,
-        "category": cat,
-        "color": color,
-        "size": size,
-        "stock_quantity": random.randint(0, 50)
-    }
-    products.append(prod)
+        prod = {
+            "id": str(uuid.uuid4()),
+            "title": title,
+            "description": desc,
+            "price_inr": price,
+            "category": cat_name,
+            "color": color,
+            "size": size,
+            "stock_quantity": random.randint(0, 50)
+        }
+        
+        # Hardcode test cases
+        if len(products) == 0:
+            prod["title"] = "Men's Black Winter Jacket (Clearance)"
+            prod["price_inr"] = 99
+            
+        products.append(prod)
 
 print(f"Generated {len(products)} products. Seeding databases...")
 

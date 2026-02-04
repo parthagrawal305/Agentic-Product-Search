@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 from typing import List, Literal, Optional, Any, Dict
 from pydantic import BaseModel, Field
 from langchain_groq import ChatGroq
@@ -17,21 +18,26 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
-qdrant = QdrantClient(path="./qdrant_data")
+@st.cache_resource(show_spinner=False)
+def get_qdrant_client():
+    # Use in-memory Qdrant to avoid multiprocess file lock errors on Streamlit Cloud
+    return QdrantClient(location=":memory:")
+
 embedding_model = TextEmbedding("BAAI/bge-small-en-v1.5")
 
 # Hardcode temperature 0.0 for deterministic tool outputs
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.0)
+llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.0)
 
 # --- Define the Structured Output Schema ---
 class SearchParams(BaseModel):
-    query: str = Field(description="The semantic search query, e.g., 'warm jacket for ski trip'. Leave empty if none.")
-    max_price_inr: Optional[float] = Field(None, description="Maximum price constraint in INR. E.g., for 'under 100', this is 100.")
+    query: str = Field(default="", description="The semantic search query without apostrophes or special characters. E.g., 'mens hat'.")
+    max_price_inr: float = Field(default=0.0, description="Maximum price constraint in INR. 0.0 means no limit.")
+    sort_by: Literal["relevance", "price_asc", "price_desc"] = Field(default="relevance", description="Extract if user asks for cheapest or most expensive.")
 
 class RouterOutput(BaseModel):
     action: Literal["search", "chat"] = Field(description="The next action to take.")
-    search_params: Optional[SearchParams] = Field(None, description="Populate only if action is 'search'.")
-    response: str = Field(description="The message to display to the user if action is 'chat'. Or a transitional thought otherwise.")
+    search_params: SearchParams = Field(default_factory=SearchParams, description="Populate only if action is 'search'.")
+    response: str = Field(default="", description="The message to display to the user if action is 'chat'. Do not use apostrophes or quotes.")
 
 # --- LangGraph Nodes ---
 
@@ -44,6 +50,7 @@ def supervisor_node(state: AgentState) -> dict:
     Analyze the user's latest message and route them appropriately.
     - If they say "hello", route to 'chat' and say hi.
     - If they are looking to buy something like "I want a jacket under 100 rs", route to 'search' and extract the constraints.
+    CRITICAL INSTRUCTION: NEVER use apostrophes, quotes, or special characters in your JSON output strings to prevent parsing errors. Use 'mens' instead of 'men's'.
     """
     
     structured_llm = llm.with_structured_output(RouterOutput)
@@ -68,7 +75,8 @@ def search_node(state: AgentState) -> dict:
     """Executes the Qdrant Hybrid Search based on active_search_filters."""
     filters = state.get("active_search_filters", {})
     query_text = filters.get("query", "")
-    max_price = filters.get("max_price_inr")
+    max_price = filters.get("max_price_inr", 0.0)
+    sort_by = filters.get("sort_by", "relevance")
     
     # 1. Embed Query
     if query_text:
@@ -79,7 +87,7 @@ def search_node(state: AgentState) -> dict:
         
     # 2. Build Qdrant Hard Filters (Hybrid Search Mechanics)
     must_conditions = []
-    if max_price:
+    if max_price > 0.0:
         must_conditions.append(
             FieldCondition(
                 key="price_inr",
@@ -91,12 +99,20 @@ def search_node(state: AgentState) -> dict:
     
     try:
         # 3. Perform Vector Search inside local Qdrant
+        qdrant = get_qdrant_client()
         hits = qdrant.query_points(
             collection_name="ecommerce_products",
             query=query_vector,
             query_filter=query_filter,
-            limit=5
+            limit=20 if sort_by != "relevance" else 5
         ).points
+        
+        # 3.5 Process custom sorting
+        if sort_by == "price_asc":
+            hits = sorted(hits, key=lambda x: x.payload["price_inr"])[:5]
+        elif sort_by == "price_desc":
+            hits = sorted(hits, key=lambda x: x.payload["price_inr"], reverse=True)[:5]
+            
     except Exception as e:
         return {"messages": [AIMessage(content=f"Database Search Error: {str(e)}")]}
     

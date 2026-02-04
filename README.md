@@ -45,4 +45,4 @@ This project uses `uv`, an extremely fast Python package and project manager wri
    ```
 
 ## Live Deployment
-[Live Streamlit Application](https://streamlit.io/) <!-- Replace with actual deployed URL -->
+[Live Streamlit Application](https://agentic-ecom-search.streamlit.app)

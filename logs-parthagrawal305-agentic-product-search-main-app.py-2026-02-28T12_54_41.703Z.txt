@@ -1,0 +1,1657 @@
+
+[     UTC     ] Logs for agentic-ecom-search.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[12:37:53] 🚀 Starting up repository: 'agentic-product-search', branch: 'main', main module: 'app.py'
+[12:37:53] 🐙 Cloning repository...
+[12:37:54] 🐙 Cloning into '/mount/src/agentic-product-search'...
+
+[12:37:54] 🐙 Cloned repository!
+[12:37:54] 🐙 Pulling code changes from Github...
+[12:37:54] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.12 environment at /home/adminuser/venv
+Resolved 112 packages in 1.32s
+Prepared 112 packages in 3.01s
+Installed 112 packages in 144ms
+ + altair==6.0.0
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + anyio==4.12.1
+ + attrs==25.4.0
+ + blinker==1.9.0
+ + cachetools==6.2.6
+ + certifi==2026.2.25
+ + cffi==2.0.0
+ + charset-normalizer==3.4.4
+ + click==8.3.1
+ + cryptography==46.0.5
+ + deprecation==2.1.0
+ + distro==1.9.0
+ + fastembed==0.7.4
+ + filelock==3.24.3[2026-02-28 12:37:59.448438] 
+ + flatbuffers==25.12.19
+ + fsspec==2026.2.0
+ + gitdb==4.0.12
+ + gitpython==3.1.46
+ + groq==0.37.1
+ + grpcio==1.78.0
+ + h11==0.16.0[2026-02-28 12:37:59.448669] 
+ + h2==4.3.0
+ + hf-xet==1.3.2
+ + hpack==4.1.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + huggingface-hub==[2026-02-28 12:37:59.449772] 1.5.0
+ + hyperframe==6.1.0
+ + idna==3.11
+ + jinja2==3.1.6
+ + jsonpatch==1.33
+ + jsonpointer==3.0.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + langchain-core==1.2.16
+ + langchain-groq==1.1.2
+ + langgraph==[2026-02-28 12:37:59.450348] 1.0.10
+ + langgraph-checkpoint==4.0.1
+ + langgraph-prebuilt==1.0.8
+ + langgraph-sdk==0.3.9
+ + langsmith==0.7.9
+ +[2026-02-28 12:37:59.450550]  loguru==0.7.3
+ + markdown-it-py==4.0.0
+ + markupsafe==3.0.3
+ + mdurl==0.1.2
+ + mmh3==5.2.0
+ + mpmath==1.3.0
+ + multidict==6.7.1
+ + narwhals==2.17.0
+ + numpy==2.4.2
+ + onnxruntime==1.24.2[2026-02-28 12:37:59.451297] 
+ + orjson==3.11.7
+ + ormsgpack==1.12.2
+ + packaging==26.0
+ + pandas==2.3.3
+ + pillow==11.3.0[2026-02-28 12:37:59.451548] 
+ + portalocker==3.2.0
+ + postgrest==2.28.0
+ + propcache==0.4.1
+ + protobuf==6.33.5
+ + [2026-02-28 12:37:59.451830] py-rust-stemmers==0.1.5
+ + pyarrow==23.0.1
+ + pycparser==3.0
+ + pydantic[2026-02-28 12:37:59.452071] ==2.12.5
+ + pydantic-core==2.41.5
+ + pydeck==0.9.1
+ + pygments==[2026-02-28 12:37:59.452294] 2.19.2
+ + pyiceberg==0.11.0
+ + pyjwt==2.11.0
+ + pyparsing==3.3.2[2026-02-28 12:37:59.452512] 
+ + pyroaring==1.0.3
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.2.1[2026-02-28 12:37:59.452767] 
+ + pytz==2025.2
+ + pyyaml==6.0.3
+ + qdrant-client==[2026-02-28 12:37:59.453021] 1.17.0
+ + realtime==2.28.0
+ + referencing==0.37.0
+ + requests[2026-02-28 12:37:59.453243] ==2.32.5
+ + requests-toolbelt==1.0.0
+ + rich==14.3.3
+ + [2026-02-28 12:37:59.453470] rpds-py==0.30.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ [2026-02-28 12:37:59.453726] + smmap==5.0.2
+ + sniffio==1.3.1
+ + storage3==2.28.0[2026-02-28 12:37:59.453970] 
+ + streamlit==1.54.0
+ + strenum==0.4.15
+ + strictyaml==1.7.3[2026-02-28 12:37:59.454213] 
+ + supabase==2.28.0
+ + supabase-auth==2.28.0
+ + supabase-functions==2.28.0
+ + sympy==1.14.0
+ + tenacity==9.1.4
+ + tokenizers==0.22.2
+ + toml==0.10.2
+ + tornado==6.5.4
+ + tqdm==4.67.3
+ + typer==0.24.1
+ + typing-extensions==4.15.0
+ + typing-inspection==0.4.2
+ + tzdata==2025.3
+ + urllib3==2.6.3
+ + uuid-utils==0.14.1
+ + watchdog==6.0.0
+ + [2026-02-28 12:37:59.454736] websockets==15.0.1
+ + xxhash==3.6.0
+ + yarl==1.22.0
+ + zstandard==0.25.0
+Checking if Streamlit is installed
+Found Streamlit version 1.54.0 in the environment
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.12 environment at /home/adminuser/venv
+Audited 1 package in 5ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[12:38:01] 🐍 Python dependencies were installed from /mount/src/agentic-product-search/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[12:38:03] 📦 Processed dependencies!
+
+
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:3 in <module>                        
+                                                                                
+     1 import streamlit as st                                                   
+     2 from langchain_core.messages import HumanMessage, AIMessage              
+  ❱  3 from src.agent.graph import app_graph                                    
+     4 from src.agent.state import AgentState                                   
+     5                                                                          
+     6 st.set_page_config(page_title="Shopping AI Agent", page_icon="🛍️")       
+                                                                                
+  /mount/src/agentic-product-search/src/agent/graph.py:3 in <module>            
+                                                                                
+     1 from langgraph.graph import StateGraph, END                              
+     2 from src.agent.state import AgentState                                   
+  ❱  3 from src.agent.nodes import supervisor_node, search_node                 
+     4                                                                          
+     5 # Define Conditional Routing Logic                                       
+     6 def route_after_supervisor(state: AgentState) -> str:                    
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:18 in <module>           
+                                                                                
+     15 # Initialize external services securely                                 
+     16 SUPABASE_URL = os.environ.get("SUPABASE_URL")                           
+     17 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")                           
+  ❱  18 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)            
+     19                                                                         
+     20 qdrant = QdrantClient(path="./qdrant_data")                             
+     21 embedding_model = TextEmbedding("BAAI/bge-small-en-v1.5")               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/supabase/_sync/client.py:3  
+  80 in create_client                                                           
+                                                                                
+    377 │   -------                                                             
+    378 │   Client                                                              
+    379 │   """                                                                 
+  ❱ 380 │   return Client.create(                                               
+    381 │   │   supabase_url=supabase_url, supabase_key=supabase_key, options=  
+    382 │   )                                                                   
+    383                                                                         
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/supabase/_sync/client.py:1  
+  09 in create                                                                  
+                                                                                
+    106 │   │   options: Optional[ClientOptions] = None,                        
+    107 │   ) -> "Client":                                                      
+    108 │   │   auth_header = options.headers.get("Authorization") if options   
+  ❱ 109 │   │   client = cls(supabase_url, supabase_key, options)               
+    110 │   │                                                                   
+    111 │   │   if auth_header is None:                                         
+    112 │   │   │   try:                                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/supabase/_sync/client.py:5  
+  7 in __init__                                                                 
+                                                                                
+     54 │   │   """                                                             
+     55 │   │                                                                   
+     56 │   │   if not supabase_url:                                            
+  ❱  57 │   │   │   raise SupabaseException("supabase_url is required")         
+     58 │   │   if not supabase_key:                                            
+     59 │   │   │   raise SupabaseException("supabase_key is required")         
+     60                                                                         
+────────────────────────────────────────────────────────────────────────────────
+SupabaseException: supabase_url is required
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s][2026-02-28 12:39:45.756910] Fetching 5 files:  20%|██        | 1/5 [00:00<00:00,  5.82it/s][2026-02-28 12:39:47.302138] Fetching 5 files:  40%|████      | 2/5 [00:01<00:02,  1.02it/s][2026-02-28 12:39:47.302425] Fetching 5 files: 100%|██████████| 5/5 [00:01<00:00,  2.91it/s]
+[12:45:01] 🐙 Pulling code changes from Github...
+[12:45:02] 📦 Processing dependencies...
+[12:45:02] 📦 Processed dependencies!
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :398 in lock                                                                  
+                                                                                
+    395 │   │   │                                                               
+    396 │   │   │   fd = self._get_fd(file_obj)                                 
+    397 │   │   │   try:                                                        
+  ❱ 398 │   │   │   │   self.locker(fd, flags)                                  
+    399 │   │   │   except OSError as exc_value:                                
+    400 │   │   │   │   if exc_value.errno in (errno.EACCES, errno.EAGAIN):     
+    401 │   │   │   │   │   raise exceptions.AlreadyLocked(                     
+────────────────────────────────────────────────────────────────────────────────
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+The above exception was the direct cause of the following exception:
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:144 in _load                                                        
+                                                                                
+     141 │   │   # on import and crashes in read-only systems even if local mo  
+     142 │   │                                                                  
+     143 │   │   try:                                                           
+  ❱  144 │   │   │   portalocker.lock(                                          
+     145 │   │   │   │   self._flock_file,                                      
+     146 │   │   │   │   portalocker.LockFlags.EXCLUSIVE | portalocker.LockFla  
+     147 │   │   │   )                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :441 in lock                                                                  
+                                                                                
+    438 │                                                                       
+    439 │   # Public API for POSIX uses the PosixLocker instance                
+    440 │   def lock(file: types.FileArgument, flags: LockFlags) -> None:       
+  ❱ 441 │   │   _posix_locker_instance.lock(file, flags)                        
+    442 │                                                                       
+    443 │   def unlock(file: types.FileArgument) -> None:                       
+    444 │   │   _posix_locker_instance.unlock(file)                             
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :401 in lock                                                                  
+                                                                                
+    398 │   │   │   │   self.locker(fd, flags)                                  
+    399 │   │   │   except OSError as exc_value:                                
+    400 │   │   │   │   if exc_value.errno in (errno.EACCES, errno.EAGAIN):     
+  ❱ 401 │   │   │   │   │   raise exceptions.AlreadyLocked(                     
+    402 │   │   │   │   │   │   exc_value,                                      
+    403 │   │   │   │   │   │   strerror=str(exc_value),                        
+    404 │   │   │   │   │   │   fh=file_obj,  # Pass original file_obj          
+────────────────────────────────────────────────────────────────────────────────
+AlreadyLocked: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:9 in <module>                        
+                                                                                
+     6 st.set_page_config(page_title="Shopping AI Agent", page_icon="🛍️")       
+     7 st.title("🛍️ Shopping AI Agent")                                         
+     8 st.markdown("Powered by **LangGraph**, **Groq**, **Supabase**, and **Qd  
+  ❱  9                                                                          
+    10 # Initialize session state for UI history                                
+    11 if "messages" not in st.session_state:                                   
+    12 │   st.session_state.messages = []                                       
+                                                                                
+  /mount/src/agentic-product-search/src/agent/graph.py:3 in <module>            
+                                                                                
+     1 from langgraph.graph import StateGraph, END                              
+     2 from src.agent.state import AgentState                                   
+  ❱  3 from src.agent.nodes import supervisor_node, search_node                 
+     4                                                                          
+     5 # Define Conditional Routing Logic                                       
+     6 def route_after_supervisor(state: AgentState) -> str:                    
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:20 in <module>           
+                                                                                
+     17 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")                           
+     18 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)            
+     19                                                                         
+  ❱  20 qdrant = QdrantClient(path="./qdrant_data")                             
+     21 embedding_model = TextEmbedding("BAAI/bge-small-en-v1.5")               
+     22                                                                         
+     23 # Hardcode temperature 0.0 for deterministic tool outputs               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/qdrant_clien  
+  t.py:126 in __init__                                                          
+                                                                                
+     123 │   │   │   │   force_disable_check_same_thread=force_disable_check_s  
+     124 │   │   │   )                                                          
+     125 │   │   elif path is not None:                                         
+  ❱  126 │   │   │   self._client = QdrantLocal(                                
+     127 │   │   │   │   location=path,                                         
+     128 │   │   │   │   force_disable_check_same_thread=force_disable_check_s  
+     129 │   │   │   )                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:63 in __init__                                                      
+                                                                                
+      60 │   │   self.collections: dict[str, LocalCollection] = {}              
+      61 │   │   self.aliases: dict[str, str] = {}                              
+      62 │   │   self._flock_file: TextIOWrapper | None = None                  
+  ❱   63 │   │   self._load()                                                   
+      64 │   │   self._closed: bool = False                                     
+      65 │                                                                      
+      66 │   @property                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:149 in _load                                                        
+                                                                                
+     146 │   │   │   │   portalocker.LockFlags.EXCLUSIVE | portalocker.LockFla  
+     147 │   │   │   )                                                          
+     148 │   │   except portalocker.exceptions.LockException:                   
+  ❱  149 │   │   │   raise RuntimeError(                                        
+     150 │   │   │   │   f"Storage folder {self.location} is already accessed   
+     151 │   │   │   │   f" If you require concurrent access, use Qdrant serve  
+     152 │   │   │   )                                                          
+────────────────────────────────────────────────────────────────────────────────
+RuntimeError: Storage folder ./qdrant_data is already accessed by another 
+instance of Qdrant client. If you require concurrent access, use Qdrant server 
+instead.
+[12:45:03] 🔄 Updated app!
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:83 in <module>                       
+                                                                                
+    80 │   │   │   "cart": [],                                                  
+    81 │   │   │   "active_search_filters": {}                                  
+    82 │   │   }                                                                
+  ❱ 83 │   │   final_state = app_graph.invoke(initial_state)                    
+    84 │   │   ai_response = final_state["messages"][-1]                        
+    85 │                                                                        
+    86 │   with st.chat_message("assistant"):                                   
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:3  
+  094 in invoke                                                                 
+                                                                                
+    3091 │   │   chunks: list[dict[str, Any] | Any] = []                        
+    3092 │   │   interrupts: list[Interrupt] = []                               
+    3093 │   │                                                                  
+  ❱ 3094 │   │   for chunk in self.stream(                                      
+    3095 │   │   │   input,                                                     
+    3096 │   │   │   config,                                                    
+    3097 │   │   │   context=context,                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:2  
+  669 in stream                                                                 
+                                                                                
+    2666 │   │   │   │   while loop.tick():                                     
+    2667 │   │   │   │   │   for task in loop.match_cached_writes():            
+    2668 │   │   │   │   │   │   loop.output_writes(task.id, task.writes, cach  
+  ❱ 2669 │   │   │   │   │   for _ in runner.tick(                              
+    2670 │   │   │   │   │   │   [t for t in loop.tasks.values() if not t.writ  
+    2671 │   │   │   │   │   │   timeout=self.step_timeout,                     
+    2672 │   │   │   │   │   │   get_waiter=get_waiter,                         
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_runner.p  
+  y:167 in tick                                                                 
+                                                                                
+    164 │   │   elif len(tasks) == 1 and timeout is None and get_waiter is Non  
+    165 │   │   │   t = tasks[0]                                                
+    166 │   │   │   try:                                                        
+  ❱ 167 │   │   │   │   run_with_retry(                                         
+    168 │   │   │   │   │   t,                                                  
+    169 │   │   │   │   │   retry_policy,                                       
+    170 │   │   │   │   │   configurable={                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py  
+  :71 in run_with_retry                                                         
+                                                                                
+     68 │   │   │   # clear any writes from previous attempts                   
+     69 │   │   │   task.writes.clear()                                         
+     70 │   │   │   # run the task                                              
+  ❱  71 │   │   │   return task.proc.invoke(task.input, config)                 
+     72 │   │   except ParentCommand as exc:                                    
+     73 │   │   │   ns: str = config[CONF][CONFIG_KEY_CHECKPOINT_NS]            
+     74 │   │   │   cmd = exc.args[0]                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:656 in invoke                                                          
+                                                                                
+    653 │   │   │   │   │   │   run = None                                      
+    654 │   │   │   │   │   # run in context                                    
+    655 │   │   │   │   │   with set_config_context(config, run) as context:    
+  ❱ 656 │   │   │   │   │   │   input = context.run(step.invoke, input, config  
+    657 │   │   │   │   else:                                                   
+    658 │   │   │   │   │   input = step.invoke(input, config)                  
+    659 │   │   # finish the root run                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:400 in invoke                                                          
+                                                                                
+    397 │   │   │   else:                                                       
+    398 │   │   │   │   run_manager.on_chain_end(ret)                           
+    399 │   │   else:                                                           
+  ❱ 400 │   │   │   ret = self.func(*args, **kwargs)                            
+    401 │   │   if self.recurse and isinstance(ret, Runnable):                  
+    402 │   │   │   return ret.invoke(input, config)                            
+    403 │   │   return ret                                                      
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:51 in supervisor_node    
+                                                                                
+     48 │                                                                       
+     49 │   structured_llm = llm.with_structured_output(RouterOutput)           
+     50 │   # The LLM evaluates the entire conversation history                 
+  ❱  51 │   response: RouterOutput = structured_llm.invoke([SystemMessage(cont  
+     52 │                                                                       
+     53 │   if response.action == "search" and response.search_params:          
+     54 │   │   # Update search filters in LangGraph State                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:3155 in invoke                                                         
+                                                                                
+    3152 │   │   │   │   )                                                      
+    3153 │   │   │   │   with set_config_context(config) as context:            
+    3154 │   │   │   │   │   if i == 0:                                         
+  ❱ 3155 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3156 │   │   │   │   │   else:                                              
+    3157 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3158 │   │   # finish the root run                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:5695 in invoke                                                         
+                                                                                
+    5692 │   │   config: RunnableConfig | None = None,                          
+    5693 │   │   **kwargs: Any | None,                                          
+    5694 │   ) -> Output:                                                       
+  ❱ 5695 │   │   return self.bound.invoke(                                      
+    5696 │   │   │   input,                                                     
+    5697 │   │   │   self._merge_configs(config),                               
+    5698 │   │   │   **{**self.kwargs, **kwargs},                               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:402 in invoke                                             
+                                                                                
+     399 │   │   │   "AIMessage",                                               
+     400 │   │   │   cast(                                                      
+     401 │   │   │   │   "ChatGeneration",                                      
+  ❱  402 │   │   │   │   self.generate_prompt(                                  
+     403 │   │   │   │   │   [self._convert_input(input)],                      
+     404 │   │   │   │   │   stop=stop,                                         
+     405 │   │   │   │   │   callbacks=config.get("callbacks"),                 
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1123 in generate_prompt                                   
+                                                                                
+    1120 │   │   **kwargs: Any,                                                 
+    1121 │   ) -> LLMResult:                                                    
+    1122 │   │   prompt_messages = [p.to_messages() for p in prompts]           
+  ❱ 1123 │   │   return self.generate(prompt_messages, stop=stop, callbacks=ca  
+    1124 │                                                                      
+    1125 │   @override                                                          
+    1126 │   async def agenerate_prompt(                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:933 in generate                                           
+                                                                                
+     930 │   │   for i, m in enumerate(input_messages):                         
+     931 │   │   │   try:                                                       
+     932 │   │   │   │   results.append(                                        
+  ❱  933 │   │   │   │   │   self._generate_with_cache(                         
+     934 │   │   │   │   │   │   m,                                             
+     935 │   │   │   │   │   │   stop=stop,                                     
+     936 │   │   │   │   │   │   run_manager=run_managers[i] if run_managers e  
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1235 in _generate_with_cache                              
+                                                                                
+    1232 │   │   │   │   chunks.append(chunk)                                   
+    1233 │   │   │   result = generate_from_stream(iter(chunks))                
+    1234 │   │   elif inspect.signature(self._generate).parameters.get("run_ma  
+  ❱ 1235 │   │   │   result = self._generate(                                   
+    1236 │   │   │   │   messages, stop=stop, run_manager=run_manager, **kwarg  
+    1237 │   │   │   )                                                          
+    1238 │   │   else:                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_groq/chat_models  
+  .py:621 in _generate                                                          
+                                                                                
+     618 │   │   │   **params,                                                  
+     619 │   │   │   **kwargs,                                                  
+     620 │   │   }                                                              
+  ❱  621 │   │   response = self.client.create(messages=message_dicts, **param  
+     622 │   │   return self._create_chat_result(response, params)              
+     623 │                                                                      
+     624 │   async def _agenerate(                                              
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/resources/chat/comple  
+  tions.py:461 in create                                                        
+                                                                                
+     458 │   │                                                                  
+     459 │   │     timeout: Override the client-level default timeout for this  
+     460 │   │   """                                                            
+  ❱  461 │   │   return self._post(                                             
+     462 │   │   │   "/openai/v1/chat/completions",                             
+     463 │   │   │   body=maybe_transform(                                      
+     464 │   │   │   │   {                                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1242   
+  in post                                                                       
+                                                                                
+    1239 │   │   opts = FinalRequestOptions.construct(                          
+    1240 │   │   │   method="post", url=path, json_data=body, files=to_httpx_f  
+    1241 │   │   )                                                              
+  ❱ 1242 │   │   return cast(ResponseT, self.request(cast_to, opts, stream=str  
+    1243 │                                                                      
+    1244 │   def patch(                                                         
+    1245 │   │   self,                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1044   
+  in request                                                                    
+                                                                                
+    1041 │   │   │   │   │   err.response.read()                                
+    1042 │   │   │   │                                                          
+    1043 │   │   │   │   log.debug("Re-raising status error")                   
+  ❱ 1044 │   │   │   │   raise self._make_status_error_from_response(err.respo  
+    1045 │   │   │                                                              
+    1046 │   │   │   break                                                      
+    1047                                                                        
+────────────────────────────────────────────────────────────────────────────────
+BadRequestError: Error code: 400 - {'error': {'message': "Failed to call a 
+function. Please adjust your prompt. See 'failed_generation' for more details.",
+'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation':
+'<function=RouterOutput>{"action": "search", "response": "Searching for men\'s 
+hats", "search_params": {"query": "men\\\'s hat", "max_price_inr": null}} 
+</function>'}}
+[NOTE] During task with name 'supervisor' and id 
+'8f15945b-614c-1e46-b96a-45845e1c9e07'
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:83 in <module>                       
+                                                                                
+    80 │   │   │   "cart": [],                                                  
+    81 │   │   │   "active_search_filters": {}                                  
+    82 │   │   }                                                                
+  ❱ 83 │   │   final_state = app_graph.invoke(initial_state)                    
+    84 │   │   ai_response = final_state["messages"][-1]                        
+    85 │                                                                        
+    86 │   with st.chat_message("assistant"):                                   
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:3  
+  094 in invoke                                                                 
+                                                                                
+    3091 │   │   chunks: list[dict[str, Any] | Any] = []                        
+    3092 │   │   interrupts: list[Interrupt] = []                               
+    3093 │   │                                                                  
+  ❱ 3094 │   │   for chunk in self.stream(                                      
+    3095 │   │   │   input,                                                     
+    3096 │   │   │   config,                                                    
+    3097 │   │   │   context=context,                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:2  
+  669 in stream                                                                 
+                                                                                
+    2666 │   │   │   │   while loop.tick():                                     
+    2667 │   │   │   │   │   for task in loop.match_cached_writes():            
+    2668 │   │   │   │   │   │   loop.output_writes(task.id, task.writes, cach  
+  ❱ 2669 │   │   │   │   │   for _ in runner.tick(                              
+    2670 │   │   │   │   │   │   [t for t in loop.tasks.values() if not t.writ  
+    2671 │   │   │   │   │   │   timeout=self.step_timeout,                     
+    2672 │   │   │   │   │   │   get_waiter=get_waiter,                         
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_runner.p  
+  y:167 in tick                                                                 
+                                                                                
+    164 │   │   elif len(tasks) == 1 and timeout is None and get_waiter is Non  
+    165 │   │   │   t = tasks[0]                                                
+    166 │   │   │   try:                                                        
+  ❱ 167 │   │   │   │   run_with_retry(                                         
+    168 │   │   │   │   │   t,                                                  
+    169 │   │   │   │   │   retry_policy,                                       
+    170 │   │   │   │   │   configurable={                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py  
+  :71 in run_with_retry                                                         
+                                                                                
+     68 │   │   │   # clear any writes from previous attempts                   
+     69 │   │   │   task.writes.clear()                                         
+     70 │   │   │   # run the task                                              
+  ❱  71 │   │   │   return task.proc.invoke(task.input, config)                 
+     72 │   │   except ParentCommand as exc:                                    
+     73 │   │   │   ns: str = config[CONF][CONFIG_KEY_CHECKPOINT_NS]            
+     74 │   │   │   cmd = exc.args[0]                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:656 in invoke                                                          
+                                                                                
+    653 │   │   │   │   │   │   run = None                                      
+    654 │   │   │   │   │   # run in context                                    
+    655 │   │   │   │   │   with set_config_context(config, run) as context:    
+  ❱ 656 │   │   │   │   │   │   input = context.run(step.invoke, input, config  
+    657 │   │   │   │   else:                                                   
+    658 │   │   │   │   │   input = step.invoke(input, config)                  
+    659 │   │   # finish the root run                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:400 in invoke                                                          
+                                                                                
+    397 │   │   │   else:                                                       
+    398 │   │   │   │   run_manager.on_chain_end(ret)                           
+    399 │   │   else:                                                           
+  ❱ 400 │   │   │   ret = self.func(*args, **kwargs)                            
+    401 │   │   if self.recurse and isinstance(ret, Runnable):                  
+    402 │   │   │   return ret.invoke(input, config)                            
+    403 │   │   return ret                                                      
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:51 in supervisor_node    
+                                                                                
+     48 │                                                                       
+     49 │   structured_llm = llm.with_structured_output(RouterOutput)           
+     50 │   # The LLM evaluates the entire conversation history                 
+  ❱  51 │   response: RouterOutput = structured_llm.invoke([SystemMessage(cont  
+     52 │                                                                       
+     53 │   if response.action == "search" and response.search_params:          
+     54 │   │   # Update search filters in LangGraph State                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:3155 in invoke                                                         
+                                                                                
+    3152 │   │   │   │   )                                                      
+    3153 │   │   │   │   with set_config_context(config) as context:            
+    3154 │   │   │   │   │   if i == 0:                                         
+  ❱ 3155 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3156 │   │   │   │   │   else:                                              
+    3157 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3158 │   │   # finish the root run                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:5695 in invoke                                                         
+                                                                                
+    5692 │   │   config: RunnableConfig | None = None,                          
+    5693 │   │   **kwargs: Any | None,                                          
+    5694 │   ) -> Output:                                                       
+  ❱ 5695 │   │   return self.bound.invoke(                                      
+    5696 │   │   │   input,                                                     
+    5697 │   │   │   self._merge_configs(config),                               
+    5698 │   │   │   **{**self.kwargs, **kwargs},                               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:402 in invoke                                             
+                                                                                
+     399 │   │   │   "AIMessage",                                               
+     400 │   │   │   cast(                                                      
+     401 │   │   │   │   "ChatGeneration",                                      
+  ❱  402 │   │   │   │   self.generate_prompt(                                  
+     403 │   │   │   │   │   [self._convert_input(input)],                      
+     404 │   │   │   │   │   stop=stop,                                         
+     405 │   │   │   │   │   callbacks=config.get("callbacks"),                 
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1123 in generate_prompt                                   
+                                                                                
+    1120 │   │   **kwargs: Any,                                                 
+    1121 │   ) -> LLMResult:                                                    
+    1122 │   │   prompt_messages = [p.to_messages() for p in prompts]           
+  ❱ 1123 │   │   return self.generate(prompt_messages, stop=stop, callbacks=ca  
+    1124 │                                                                      
+    1125 │   @override                                                          
+    1126 │   async def agenerate_prompt(                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:933 in generate                                           
+                                                                                
+     930 │   │   for i, m in enumerate(input_messages):                         
+     931 │   │   │   try:                                                       
+     932 │   │   │   │   results.append(                                        
+  ❱  933 │   │   │   │   │   self._generate_with_cache(                         
+     934 │   │   │   │   │   │   m,                                             
+     935 │   │   │   │   │   │   stop=stop,                                     
+     936 │   │   │   │   │   │   run_manager=run_managers[i] if run_managers e  
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1235 in _generate_with_cache                              
+                                                                                
+    1232 │   │   │   │   chunks.append(chunk)                                   
+    1233 │   │   │   result = generate_from_stream(iter(chunks))                
+    1234 │   │   elif inspect.signature(self._generate).parameters.get("run_ma  
+  ❱ 1235 │   │   │   result = self._generate(                                   
+    1236 │   │   │   │   messages, stop=stop, run_manager=run_manager, **kwarg  
+    1237 │   │   │   )                                                          
+    1238 │   │   else:                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_groq/chat_models  
+  .py:621 in _generate                                                          
+                                                                                
+     618 │   │   │   **params,                                                  
+     619 │   │   │   **kwargs,                                                  
+     620 │   │   }                                                              
+  ❱  621 │   │   response = self.client.create(messages=message_dicts, **param  
+     622 │   │   return self._create_chat_result(response, params)              
+     623 │                                                                      
+     624 │   async def _agenerate(                                              
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/resources/chat/comple  
+  tions.py:461 in create                                                        
+                                                                                
+     458 │   │                                                                  
+     459 │   │     timeout: Override the client-level default timeout for this  
+     460 │   │   """                                                            
+  ❱  461 │   │   return self._post(                                             
+     462 │   │   │   "/openai/v1/chat/completions",                             
+     463 │   │   │   body=maybe_transform(                                      
+     464 │   │   │   │   {                                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1242   
+  in post                                                                       
+                                                                                
+    1239 │   │   opts = FinalRequestOptions.construct(                          
+    1240 │   │   │   method="post", url=path, json_data=body, files=to_httpx_f  
+    1241 │   │   )                                                              
+  ❱ 1242 │   │   return cast(ResponseT, self.request(cast_to, opts, stream=str  
+    1243 │                                                                      
+    1244 │   def patch(                                                         
+    1245 │   │   self,                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1044   
+  in request                                                                    
+                                                                                
+    1041 │   │   │   │   │   err.response.read()                                
+    1042 │   │   │   │                                                          
+    1043 │   │   │   │   log.debug("Re-raising status error")                   
+  ❱ 1044 │   │   │   │   raise self._make_status_error_from_response(err.respo  
+    1045 │   │   │                                                              
+    1046 │   │   │   break                                                      
+    1047                                                                        
+────────────────────────────────────────────────────────────────────────────────
+BadRequestError: Error code: 400 - {'error': {'message': "Failed to call a 
+function. Please adjust your prompt. See 'failed_generation' for more details.",
+'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation':
+'<function=RouterOutput>{"action": "search", "response": "Searching for men\'s 
+hats", "search_params": {"query": "men\\\'s hat", "max_price_inr": 
+null}}</function>'}}
+[NOTE] During task with name 'supervisor' and id 
+'c7fd4c06-5bfa-0ae3-fefc-8592d110b748'
+[12:50:32] 🐙 Pulling code changes from Github...
+[12:50:32] 📦 Processing dependencies...
+[12:50:32] 📦 Processed dependencies!
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :398 in lock                                                                  
+                                                                                
+    395 │   │   │                                                               
+    396 │   │   │   fd = self._get_fd(file_obj)                                 
+    397 │   │   │   try:                                                        
+  ❱ 398 │   │   │   │   self.locker(fd, flags)                                  
+    399 │   │   │   except OSError as exc_value:                                
+    400 │   │   │   │   if exc_value.errno in (errno.EACCES, errno.EAGAIN):     
+    401 │   │   │   │   │   raise exceptions.AlreadyLocked(                     
+────────────────────────────────────────────────────────────────────────────────
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+The above exception was the direct cause of the following exception:
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:144 in _load                                                        
+                                                                                
+     141 │   │   # on import and crashes in read-only systems even if local mo  
+     142 │   │                                                                  
+     143 │   │   try:                                                           
+  ❱  144 │   │   │   portalocker.lock(                                          
+     145 │   │   │   │   self._flock_file,                                      
+     146 │   │   │   │   portalocker.LockFlags.EXCLUSIVE | portalocker.LockFla  
+     147 │   │   │   )                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :441 in lock                                                                  
+                                                                                
+    438 │                                                                       
+    439 │   # Public API for POSIX uses the PosixLocker instance                
+    440 │   def lock(file: types.FileArgument, flags: LockFlags) -> None:       
+  ❱ 441 │   │   _posix_locker_instance.lock(file, flags)                        
+    442 │                                                                       
+    443 │   def unlock(file: types.FileArgument) -> None:                       
+    444 │   │   _posix_locker_instance.unlock(file)                             
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :401 in lock                                                                  
+                                                                                
+    398 │   │   │   │   self.locker(fd, flags)                                  
+    399 │   │   │   except OSError as exc_value:                                
+    400 │   │   │   │   if exc_value.errno in (errno.EACCES, errno.EAGAIN):     
+  ❱ 401 │   │   │   │   │   raise exceptions.AlreadyLocked(                     
+    402 │   │   │   │   │   │   exc_value,                                      
+    403 │   │   │   │   │   │   strerror=str(exc_value),                        
+    404 │   │   │   │   │   │   fh=file_obj,  # Pass original file_obj          
+────────────────────────────────────────────────────────────────────────────────
+AlreadyLocked: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:9 in <module>                        
+                                                                                
+     6 from fastembed import TextEmbedding                                      
+     7                                                                          
+     8 # Import our backend logic                                               
+  ❱  9 from src.agent.graph import app_graph                                    
+    10 from src.agent.state import AgentState                                   
+    11 from src.agent.nodes import qdrant  # Import the global qdrant client f  
+    12                                                                          
+                                                                                
+  /mount/src/agentic-product-search/src/agent/graph.py:3 in <module>            
+                                                                                
+     1 from langgraph.graph import StateGraph, END                              
+     2 from src.agent.state import AgentState                                   
+  ❱  3 from src.agent.nodes import supervisor_node, search_node                 
+     4                                                                          
+     5 # Define Conditional Routing Logic                                       
+     6 def route_after_supervisor(state: AgentState) -> str:                    
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:20 in <module>           
+                                                                                
+     17 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")                           
+     18 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)            
+     19                                                                         
+  ❱  20 qdrant = QdrantClient(path="./qdrant_data")                             
+     21 embedding_model = TextEmbedding("BAAI/bge-small-en-v1.5")               
+     22                                                                         
+     23 # Hardcode temperature 0.0 for deterministic tool outputs               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/qdrant_clien  
+  t.py:126 in __init__                                                          
+                                                                                
+     123 │   │   │   │   force_disable_check_same_thread=force_disable_check_s  
+     124 │   │   │   )                                                          
+     125 │   │   elif path is not None:                                         
+  ❱  126 │   │   │   self._client = QdrantLocal(                                
+     127 │   │   │   │   location=path,                                         
+     128 │   │   │   │   force_disable_check_same_thread=force_disable_check_s  
+     129 │   │   │   )                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:63 in __init__                                                      
+                                                                                
+      60 │   │   self.collections: dict[str, LocalCollection] = {}              
+      61 │   │   self.aliases: dict[str, str] = {}                              
+      62 │   │   self._flock_file: TextIOWrapper | None = None                  
+  ❱   63 │   │   self._load()                                                   
+      64 │   │   self._closed: bool = False                                     
+      65 │                                                                      
+      66 │   @property                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:149 in _load                                                        
+                                                                                
+     146 │   │   │   │   portalocker.LockFlags.EXCLUSIVE | portalocker.LockFla  
+     147 │   │   │   )                                                          
+     148 │   │   except portalocker.exceptions.LockException:                   
+  ❱  149 │   │   │   raise RuntimeError(                                        
+     150 │   │   │   │   f"Storage folder {self.location} is already accessed   
+     151 │   │   │   │   f" If you require concurrent access, use Qdrant serve  
+     152 │   │   │   )                                                          
+────────────────────────────────────────────────────────────────────────────────
+RuntimeError: Storage folder ./qdrant_data is already accessed by another 
+instance of Qdrant client. If you require concurrent access, use Qdrant server 
+instead.
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :398 in lock                                                                  
+                                                                                
+    395 │   │   │                                                               
+    396 │   │   │   fd = self._get_fd(file_obj)                                 
+    397 │   │   │   try:                                                        
+  ❱ 398 │   │   │   │   self.locker(fd, flags)                                  
+    399 │   │   │   except OSError as exc_value:                                
+    400 │   │   │   │   if exc_value.errno in (errno.EACCES, errno.EAGAIN):     
+    401 │   │   │   │   │   raise exceptions.AlreadyLocked(                     
+────────────────────────────────────────────────────────────────────────────────
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+The above exception was the direct cause of the following exception:
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:144 in _load                                                        
+                                                                                
+     141 │   │   # on import and crashes in read-only systems even if local mo  
+     142 │   │                                                                  
+     143 │   │   try:                                                           
+  ❱  144 │   │   │   portalocker.lock(                                          
+     145 │   │   │   │   self._flock_file,                                      
+     146 │   │   │   │   portalocker.LockFlags.EXCLUSIVE | portalocker.LockFla  
+     147 │   │   │   )                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :441 in lock                                                                  
+                                                                                
+    438 │                                                                       
+    439 │   # Public API for POSIX uses the PosixLocker instance                
+    440 │   def lock(file: types.FileArgument, flags: LockFlags) -> None:       
+  ❱ 441 │   │   _posix_locker_instance.lock(file, flags)                        
+    442 │                                                                       
+    443 │   def unlock(file: types.FileArgument) -> None:                       
+    444 │   │   _posix_locker_instance.unlock(file)                             
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/portalocker/portalocker.py  
+  :401 in lock                                                                  
+                                                                                
+    398 │   │   │   │   self.locker(fd, flags)                                  
+    399 │   │   │   except OSError as exc_value:                                
+    400 │   │   │   │   if exc_value.errno in (errno.EACCES, errno.EAGAIN):     
+  ❱ 401 │   │   │   │   │   raise exceptions.AlreadyLocked(                     
+    402 │   │   │   │   │   │   exc_value,                                      
+    403 │   │   │   │   │   │   strerror=str(exc_value),                        
+    404 │   │   │   │   │   │   fh=file_obj,  # Pass original file_obj          
+────────────────────────────────────────────────────────────────────────────────
+AlreadyLocked: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:9 in <module>                        
+                                                                                
+     6 from fastembed import TextEmbedding                                      
+     7                                                                          
+     8 # Import our backend logic                                               
+  ❱  9 from src.agent.graph import app_graph                                    
+    10 from src.agent.state import AgentState                                   
+    11 from src.agent.nodes import qdrant  # Import the global qdrant client f  
+    12                                                                          
+                                                                                
+  /mount/src/agentic-product-search/src/agent/graph.py:3 in <module>            
+                                                                                
+     1 from langgraph.graph import StateGraph, END                              
+     2 from src.agent.state import AgentState                                   
+  ❱  3 from src.agent.nodes import supervisor_node, search_node                 
+     4                                                                          
+     5 # Define Conditional Routing Logic                                       
+     6 def route_after_supervisor(state: AgentState) -> str:                    
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:20 in <module>           
+                                                                                
+     17 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")                           
+     18 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)            
+     19                                                                         
+  ❱  20 qdrant = QdrantClient(path="./qdrant_data")                             
+     21 embedding_model = TextEmbedding("BAAI/bge-small-en-v1.5")               
+     22                                                                         
+     23 # Hardcode temperature 0.0 for deterministic tool outputs               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/qdrant_clien  
+  t.py:126 in __init__                                                          
+                                                                                
+     123 │   │   │   │   force_disable_check_same_thread=force_disable_check_s  
+     124 │   │   │   )                                                          
+     125 │   │   elif path is not None:                                         
+  ❱  126 │   │   │   self._client = QdrantLocal(                                
+     127 │   │   │   │   location=path,                                         
+     128 │   │   │   │   force_disable_check_same_thread=force_disable_check_s  
+     129 │   │   │   )                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:63 in __init__                                                      
+                                                                                
+      60 │   │   self.collections: dict[str, LocalCollection] = {}              
+      61 │   │   self.aliases: dict[str, str] = {}                              
+      62 │   │   self._flock_file: TextIOWrapper | None = None                  
+  ❱   63 │   │   self._load()                                                   
+      64 │   │   self._closed: bool = False                                     
+      65 │                                                                      
+      66 │   @property                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/qdrant_client/local/qdrant  
+  _local.py:149 in _load                                                        
+                                                                                
+     146 │   │   │   │   portalocker.LockFlags.EXCLUSIVE | portalocker.LockFla  
+     147 │   │   │   )                                                          
+     148 │   │   except portalocker.exceptions.LockException:                   
+  ❱  149 │   │   │   raise RuntimeError(                                        
+     150 │   │   │   │   f"Storage folder {self.location} is already accessed   
+     151 │   │   │   │   f" If you require concurrent access, use Qdrant serve  
+     152 │   │   │   )                                                          
+────────────────────────────────────────────────────────────────────────────────
+RuntimeError: Storage folder ./qdrant_data is already accessed by another 
+instance of Qdrant client. If you require concurrent access, use Qdrant server 
+instead.
+[12:50:34] 🔄 Updated app!
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:83 in <module>                       
+                                                                                
+    80 │   │   │   "cart": [],                                                  
+    81 │   │   │   "active_search_filters": {}                                  
+    82 │   │   }                                                                
+  ❱ 83 │   │   final_state = app_graph.invoke(initial_state)                    
+    84 │   │   ai_response = final_state["messages"][-1]                        
+    85 │                                                                        
+    86 │   with st.chat_message("assistant"):                                   
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:3  
+  094 in invoke                                                                 
+                                                                                
+    3091 │   │   chunks: list[dict[str, Any] | Any] = []                        
+    3092 │   │   interrupts: list[Interrupt] = []                               
+    3093 │   │                                                                  
+  ❱ 3094 │   │   for chunk in self.stream(                                      
+    3095 │   │   │   input,                                                     
+    3096 │   │   │   config,                                                    
+    3097 │   │   │   context=context,                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:2  
+  669 in stream                                                                 
+                                                                                
+    2666 │   │   │   │   while loop.tick():                                     
+    2667 │   │   │   │   │   for task in loop.match_cached_writes():            
+    2668 │   │   │   │   │   │   loop.output_writes(task.id, task.writes, cach  
+  ❱ 2669 │   │   │   │   │   for _ in runner.tick(                              
+    2670 │   │   │   │   │   │   [t for t in loop.tasks.values() if not t.writ  
+    2671 │   │   │   │   │   │   timeout=self.step_timeout,                     
+    2672 │   │   │   │   │   │   get_waiter=get_waiter,                         
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_runner.p  
+  y:167 in tick                                                                 
+                                                                                
+    164 │   │   elif len(tasks) == 1 and timeout is None and get_waiter is Non  
+    165 │   │   │   t = tasks[0]                                                
+    166 │   │   │   try:                                                        
+  ❱ 167 │   │   │   │   run_with_retry(                                         
+    168 │   │   │   │   │   t,                                                  
+    169 │   │   │   │   │   retry_policy,                                       
+    170 │   │   │   │   │   configurable={                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py  
+  :71 in run_with_retry                                                         
+                                                                                
+     68 │   │   │   # clear any writes from previous attempts                   
+     69 │   │   │   task.writes.clear()                                         
+     70 │   │   │   # run the task                                              
+  ❱  71 │   │   │   return task.proc.invoke(task.input, config)                 
+     72 │   │   except ParentCommand as exc:                                    
+     73 │   │   │   ns: str = config[CONF][CONFIG_KEY_CHECKPOINT_NS]            
+     74 │   │   │   cmd = exc.args[0]                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:656 in invoke                                                          
+                                                                                
+    653 │   │   │   │   │   │   run = None                                      
+    654 │   │   │   │   │   # run in context                                    
+    655 │   │   │   │   │   with set_config_context(config, run) as context:    
+  ❱ 656 │   │   │   │   │   │   input = context.run(step.invoke, input, config  
+    657 │   │   │   │   else:                                                   
+    658 │   │   │   │   │   input = step.invoke(input, config)                  
+    659 │   │   # finish the root run                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:400 in invoke                                                          
+                                                                                
+    397 │   │   │   else:                                                       
+    398 │   │   │   │   run_manager.on_chain_end(ret)                           
+    399 │   │   else:                                                           
+  ❱ 400 │   │   │   ret = self.func(*args, **kwargs)                            
+    401 │   │   if self.recurse and isinstance(ret, Runnable):                  
+    402 │   │   │   return ret.invoke(input, config)                            
+    403 │   │   return ret                                                      
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:52 in supervisor_node    
+                                                                                
+     49 │                                                                       
+     50 │   structured_llm = llm.with_structured_output(RouterOutput)           
+     51 │   # The LLM evaluates the entire conversation history                 
+  ❱  52 │   response: RouterOutput = structured_llm.invoke([SystemMessage(cont  
+     53 │                                                                       
+     54 │   if response.action == "search" and response.search_params:          
+     55 │   │   # Update search filters in LangGraph State                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:3155 in invoke                                                         
+                                                                                
+    3152 │   │   │   │   )                                                      
+    3153 │   │   │   │   with set_config_context(config) as context:            
+    3154 │   │   │   │   │   if i == 0:                                         
+  ❱ 3155 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3156 │   │   │   │   │   else:                                              
+    3157 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3158 │   │   # finish the root run                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:5695 in invoke                                                         
+                                                                                
+    5692 │   │   config: RunnableConfig | None = None,                          
+    5693 │   │   **kwargs: Any | None,                                          
+    5694 │   ) -> Output:                                                       
+  ❱ 5695 │   │   return self.bound.invoke(                                      
+    5696 │   │   │   input,                                                     
+    5697 │   │   │   self._merge_configs(config),                               
+    5698 │   │   │   **{**self.kwargs, **kwargs},                               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:402 in invoke                                             
+                                                                                
+     399 │   │   │   "AIMessage",                                               
+     400 │   │   │   cast(                                                      
+     401 │   │   │   │   "ChatGeneration",                                      
+  ❱  402 │   │   │   │   self.generate_prompt(                                  
+     403 │   │   │   │   │   [self._convert_input(input)],                      
+     404 │   │   │   │   │   stop=stop,                                         
+     405 │   │   │   │   │   callbacks=config.get("callbacks"),                 
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1123 in generate_prompt                                   
+                                                                                
+    1120 │   │   **kwargs: Any,                                                 
+    1121 │   ) -> LLMResult:                                                    
+    1122 │   │   prompt_messages = [p.to_messages() for p in prompts]           
+  ❱ 1123 │   │   return self.generate(prompt_messages, stop=stop, callbacks=ca  
+    1124 │                                                                      
+    1125 │   @override                                                          
+    1126 │   async def agenerate_prompt(                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:933 in generate                                           
+                                                                                
+     930 │   │   for i, m in enumerate(input_messages):                         
+     931 │   │   │   try:                                                       
+     932 │   │   │   │   results.append(                                        
+  ❱  933 │   │   │   │   │   self._generate_with_cache(                         
+     934 │   │   │   │   │   │   m,                                             
+     935 │   │   │   │   │   │   stop=stop,                                     
+     936 │   │   │   │   │   │   run_manager=run_managers[i] if run_managers e  
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1235 in _generate_with_cache                              
+                                                                                
+    1232 │   │   │   │   chunks.append(chunk)                                   
+    1233 │   │   │   result = generate_from_stream(iter(chunks))                
+    1234 │   │   elif inspect.signature(self._generate).parameters.get("run_ma  
+  ❱ 1235 │   │   │   result = self._generate(                                   
+    1236 │   │   │   │   messages, stop=stop, run_manager=run_manager, **kwarg  
+    1237 │   │   │   )                                                          
+    1238 │   │   else:                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_groq/chat_models  
+  .py:621 in _generate                                                          
+                                                                                
+     618 │   │   │   **params,                                                  
+     619 │   │   │   **kwargs,                                                  
+     620 │   │   }                                                              
+  ❱  621 │   │   response = self.client.create(messages=message_dicts, **param  
+     622 │   │   return self._create_chat_result(response, params)              
+     623 │                                                                      
+     624 │   async def _agenerate(                                              
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/resources/chat/comple  
+  tions.py:461 in create                                                        
+                                                                                
+     458 │   │                                                                  
+     459 │   │     timeout: Override the client-level default timeout for this  
+     460 │   │   """                                                            
+  ❱  461 │   │   return self._post(                                             
+     462 │   │   │   "/openai/v1/chat/completions",                             
+     463 │   │   │   body=maybe_transform(                                      
+     464 │   │   │   │   {                                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1242   
+  in post                                                                       
+                                                                                
+    1239 │   │   opts = FinalRequestOptions.construct(                          
+    1240 │   │   │   method="post", url=path, json_data=body, files=to_httpx_f  
+    1241 │   │   )                                                              
+  ❱ 1242 │   │   return cast(ResponseT, self.request(cast_to, opts, stream=str  
+    1243 │                                                                      
+    1244 │   def patch(                                                         
+    1245 │   │   self,                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1044   
+  in request                                                                    
+                                                                                
+    1041 │   │   │   │   │   err.response.read()                                
+    1042 │   │   │   │                                                          
+    1043 │   │   │   │   log.debug("Re-raising status error")                   
+  ❱ 1044 │   │   │   │   raise self._make_status_error_from_response(err.respo  
+    1045 │   │   │                                                              
+    1046 │   │   │   break                                                      
+    1047                                                                        
+────────────────────────────────────────────────────────────────────────────────
+RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for 
+model `llama-3.3-70b-versatile` in organization `org_01kgd260zcfsr8ar1vkvceahwz`
+service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98900, 
+Requested 1174. Please try again in 1m3.936s. Need more tokens? Upgrade to Dev 
+Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+[NOTE] During task with name 'supervisor' and id 
+'2a7cdc83-cfba-3ce9-a7d6-29379484b51e'
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:83 in <module>                       
+                                                                                
+    80 │   │   │   "cart": [],                                                  
+    81 │   │   │   "active_search_filters": {}                                  
+    82 │   │   }                                                                
+  ❱ 83 │   │   final_state = app_graph.invoke(initial_state)                    
+    84 │   │   ai_response = final_state["messages"][-1]                        
+    85 │                                                                        
+    86 │   with st.chat_message("assistant"):                                   
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:3  
+  094 in invoke                                                                 
+                                                                                
+    3091 │   │   chunks: list[dict[str, Any] | Any] = []                        
+    3092 │   │   interrupts: list[Interrupt] = []                               
+    3093 │   │                                                                  
+  ❱ 3094 │   │   for chunk in self.stream(                                      
+    3095 │   │   │   input,                                                     
+    3096 │   │   │   config,                                                    
+    3097 │   │   │   context=context,                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:2  
+  669 in stream                                                                 
+                                                                                
+    2666 │   │   │   │   while loop.tick():                                     
+    2667 │   │   │   │   │   for task in loop.match_cached_writes():            
+    2668 │   │   │   │   │   │   loop.output_writes(task.id, task.writes, cach  
+  ❱ 2669 │   │   │   │   │   for _ in runner.tick(                              
+    2670 │   │   │   │   │   │   [t for t in loop.tasks.values() if not t.writ  
+    2671 │   │   │   │   │   │   timeout=self.step_timeout,                     
+    2672 │   │   │   │   │   │   get_waiter=get_waiter,                         
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_runner.p  
+  y:167 in tick                                                                 
+                                                                                
+    164 │   │   elif len(tasks) == 1 and timeout is None and get_waiter is Non  
+    165 │   │   │   t = tasks[0]                                                
+    166 │   │   │   try:                                                        
+  ❱ 167 │   │   │   │   run_with_retry(                                         
+    168 │   │   │   │   │   t,                                                  
+    169 │   │   │   │   │   retry_policy,                                       
+    170 │   │   │   │   │   configurable={                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py  
+  :71 in run_with_retry                                                         
+                                                                                
+     68 │   │   │   # clear any writes from previous attempts                   
+     69 │   │   │   task.writes.clear()                                         
+     70 │   │   │   # run the task                                              
+  ❱  71 │   │   │   return task.proc.invoke(task.input, config)                 
+     72 │   │   except ParentCommand as exc:                                    
+     73 │   │   │   ns: str = config[CONF][CONFIG_KEY_CHECKPOINT_NS]            
+     74 │   │   │   cmd = exc.args[0]                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:656 in invoke                                                          
+                                                                                
+    653 │   │   │   │   │   │   run = None                                      
+    654 │   │   │   │   │   # run in context                                    
+    655 │   │   │   │   │   with set_config_context(config, run) as context:    
+  ❱ 656 │   │   │   │   │   │   input = context.run(step.invoke, input, config  
+    657 │   │   │   │   else:                                                   
+    658 │   │   │   │   │   input = step.invoke(input, config)                  
+    659 │   │   # finish the root run                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:400 in invoke                                                          
+                                                                                
+    397 │   │   │   else:                                                       
+    398 │   │   │   │   run_manager.on_chain_end(ret)                           
+    399 │   │   else:                                                           
+  ❱ 400 │   │   │   ret = self.func(*args, **kwargs)                            
+    401 │   │   if self.recurse and isinstance(ret, Runnable):                  
+    402 │   │   │   return ret.invoke(input, config)                            
+    403 │   │   return ret                                                      
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:52 in supervisor_node    
+                                                                                
+     49 │                                                                       
+     50 │   structured_llm = llm.with_structured_output(RouterOutput)           
+     51 │   # The LLM evaluates the entire conversation history                 
+  ❱  52 │   response: RouterOutput = structured_llm.invoke([SystemMessage(cont  
+     53 │                                                                       
+     54 │   if response.action == "search" and response.search_params:          
+     55 │   │   # Update search filters in LangGraph State                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:3155 in invoke                                                         
+                                                                                
+    3152 │   │   │   │   )                                                      
+    3153 │   │   │   │   with set_config_context(config) as context:            
+    3154 │   │   │   │   │   if i == 0:                                         
+  ❱ 3155 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3156 │   │   │   │   │   else:                                              
+    3157 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3158 │   │   # finish the root run                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:5695 in invoke                                                         
+                                                                                
+    5692 │   │   config: RunnableConfig | None = None,                          
+    5693 │   │   **kwargs: Any | None,                                          
+    5694 │   ) -> Output:                                                       
+  ❱ 5695 │   │   return self.bound.invoke(                                      
+    5696 │   │   │   input,                                                     
+    5697 │   │   │   self._merge_configs(config),                               
+    5698 │   │   │   **{**self.kwargs, **kwargs},                               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:402 in invoke                                             
+                                                                                
+     399 │   │   │   "AIMessage",                                               
+     400 │   │   │   cast(                                                      
+     401 │   │   │   │   "ChatGeneration",                                      
+  ❱  402 │   │   │   │   self.generate_prompt(                                  
+     403 │   │   │   │   │   [self._convert_input(input)],                      
+     404 │   │   │   │   │   stop=stop,                                         
+     405 │   │   │   │   │   callbacks=config.get("callbacks"),                 
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1123 in generate_prompt                                   
+                                                                                
+    1120 │   │   **kwargs: Any,                                                 
+    1121 │   ) -> LLMResult:                                                    
+    1122 │   │   prompt_messages = [p.to_messages() for p in prompts]           
+  ❱ 1123 │   │   return self.generate(prompt_messages, stop=stop, callbacks=ca  
+    1124 │                                                                      
+    1125 │   @override                                                          
+    1126 │   async def agenerate_prompt(                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:933 in generate                                           
+                                                                                
+     930 │   │   for i, m in enumerate(input_messages):                         
+     931 │   │   │   try:                                                       
+     932 │   │   │   │   results.append(                                        
+  ❱  933 │   │   │   │   │   self._generate_with_cache(                         
+     934 │   │   │   │   │   │   m,                                             
+     935 │   │   │   │   │   │   stop=stop,                                     
+     936 │   │   │   │   │   │   run_manager=run_managers[i] if run_managers e  
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1235 in _generate_with_cache                              
+                                                                                
+    1232 │   │   │   │   chunks.append(chunk)                                   
+    1233 │   │   │   result = generate_from_stream(iter(chunks))                
+    1234 │   │   elif inspect.signature(self._generate).parameters.get("run_ma  
+  ❱ 1235 │   │   │   result = self._generate(                                   
+    1236 │   │   │   │   messages, stop=stop, run_manager=run_manager, **kwarg  
+    1237 │   │   │   )                                                          
+    1238 │   │   else:                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_groq/chat_models  
+  .py:621 in _generate                                                          
+                                                                                
+     618 │   │   │   **params,                                                  
+     619 │   │   │   **kwargs,                                                  
+     620 │   │   }                                                              
+  ❱  621 │   │   response = self.client.create(messages=message_dicts, **param  
+     622 │   │   return self._create_chat_result(response, params)              
+     623 │                                                                      
+     624 │   async def _agenerate(                                              
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/resources/chat/comple  
+  tions.py:461 in create                                                        
+                                                                                
+     458 │   │                                                                  
+     459 │   │     timeout: Override the client-level default timeout for this  
+     460 │   │   """                                                            
+  ❱  461 │   │   return self._post(                                             
+     462 │   │   │   "/openai/v1/chat/completions",                             
+     463 │   │   │   body=maybe_transform(                                      
+     464 │   │   │   │   {                                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1242   
+  in post                                                                       
+                                                                                
+    1239 │   │   opts = FinalRequestOptions.construct(                          
+    1240 │   │   │   method="post", url=path, json_data=body, files=to_httpx_f  
+    1241 │   │   )                                                              
+  ❱ 1242 │   │   return cast(ResponseT, self.request(cast_to, opts, stream=str  
+    1243 │                                                                      
+    1244 │   def patch(                                                         
+    1245 │   │   self,                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1044   
+  in request                                                                    
+                                                                                
+    1041 │   │   │   │   │   err.response.read()                                
+    1042 │   │   │   │                                                          
+    1043 │   │   │   │   log.debug("Re-raising status error")                   
+  ❱ 1044 │   │   │   │   raise self._make_status_error_from_response(err.respo  
+    1045 │   │   │                                                              
+    1046 │   │   │   break                                                      
+    1047                                                                        
+────────────────────────────────────────────────────────────────────────────────
+RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for 
+model `llama-3.3-70b-versatile` in organization `org_01kgd260zcfsr8ar1vkvceahwz`
+service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98887, 
+Requested 1183. Please try again in 1m0.48s. Need more tokens? Upgrade to Dev 
+Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+[NOTE] During task with name 'supervisor' and id 
+'e59dbe2e-b65d-3ff5-30a9-f0d96b1a62de'
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:689 in code_to_exec                                     
+                                                                                
+  /mount/src/agentic-product-search/app.py:83 in <module>                       
+                                                                                
+    80 │   │   │   "cart": [],                                                  
+    81 │   │   │   "active_search_filters": {}                                  
+    82 │   │   }                                                                
+  ❱ 83 │   │   final_state = app_graph.invoke(initial_state)                    
+    84 │   │   ai_response = final_state["messages"][-1]                        
+    85 │                                                                        
+    86 │   with st.chat_message("assistant"):                                   
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:3  
+  094 in invoke                                                                 
+                                                                                
+    3091 │   │   chunks: list[dict[str, Any] | Any] = []                        
+    3092 │   │   interrupts: list[Interrupt] = []                               
+    3093 │   │                                                                  
+  ❱ 3094 │   │   for chunk in self.stream(                                      
+    3095 │   │   │   input,                                                     
+    3096 │   │   │   config,                                                    
+    3097 │   │   │   context=context,                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/main.py:2  
+  669 in stream                                                                 
+                                                                                
+    2666 │   │   │   │   while loop.tick():                                     
+    2667 │   │   │   │   │   for task in loop.match_cached_writes():            
+    2668 │   │   │   │   │   │   loop.output_writes(task.id, task.writes, cach  
+  ❱ 2669 │   │   │   │   │   for _ in runner.tick(                              
+    2670 │   │   │   │   │   │   [t for t in loop.tasks.values() if not t.writ  
+    2671 │   │   │   │   │   │   timeout=self.step_timeout,                     
+    2672 │   │   │   │   │   │   get_waiter=get_waiter,                         
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_runner.p  
+  y:167 in tick                                                                 
+                                                                                
+    164 │   │   elif len(tasks) == 1 and timeout is None and get_waiter is Non  
+    165 │   │   │   t = tasks[0]                                                
+    166 │   │   │   try:                                                        
+  ❱ 167 │   │   │   │   run_with_retry(                                         
+    168 │   │   │   │   │   t,                                                  
+    169 │   │   │   │   │   retry_policy,                                       
+    170 │   │   │   │   │   configurable={                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py  
+  :71 in run_with_retry                                                         
+                                                                                
+     68 │   │   │   # clear any writes from previous attempts                   
+     69 │   │   │   task.writes.clear()                                         
+     70 │   │   │   # run the task                                              
+  ❱  71 │   │   │   return task.proc.invoke(task.input, config)                 
+     72 │   │   except ParentCommand as exc:                                    
+     73 │   │   │   ns: str = config[CONF][CONFIG_KEY_CHECKPOINT_NS]            
+     74 │   │   │   cmd = exc.args[0]                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:656 in invoke                                                          
+                                                                                
+    653 │   │   │   │   │   │   run = None                                      
+    654 │   │   │   │   │   # run in context                                    
+    655 │   │   │   │   │   with set_config_context(config, run) as context:    
+  ❱ 656 │   │   │   │   │   │   input = context.run(step.invoke, input, config  
+    657 │   │   │   │   else:                                                   
+    658 │   │   │   │   │   input = step.invoke(input, config)                  
+    659 │   │   # finish the root run                                           
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langgraph/_internal/_runna  
+  ble.py:400 in invoke                                                          
+                                                                                
+    397 │   │   │   else:                                                       
+    398 │   │   │   │   run_manager.on_chain_end(ret)                           
+    399 │   │   else:                                                           
+  ❱ 400 │   │   │   ret = self.func(*args, **kwargs)                            
+    401 │   │   if self.recurse and isinstance(ret, Runnable):                  
+    402 │   │   │   return ret.invoke(input, config)                            
+    403 │   │   return ret                                                      
+                                                                                
+  /mount/src/agentic-product-search/src/agent/nodes.py:52 in supervisor_node    
+                                                                                
+     49 │                                                                       
+     50 │   structured_llm = llm.with_structured_output(RouterOutput)           
+     51 │   # The LLM evaluates the entire conversation history                 
+  ❱  52 │   response: RouterOutput = structured_llm.invoke([SystemMessage(cont  
+     53 │                                                                       
+     54 │   if response.action == "search" and response.search_params:          
+     55 │   │   # Update search filters in LangGraph State                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:3155 in invoke                                                         
+                                                                                
+    3152 │   │   │   │   )                                                      
+    3153 │   │   │   │   with set_config_context(config) as context:            
+    3154 │   │   │   │   │   if i == 0:                                         
+  ❱ 3155 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3156 │   │   │   │   │   else:                                              
+    3157 │   │   │   │   │   │   input_ = context.run(step.invoke, input_, con  
+    3158 │   │   # finish the root run                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/runnables/b  
+  ase.py:5695 in invoke                                                         
+                                                                                
+    5692 │   │   config: RunnableConfig | None = None,                          
+    5693 │   │   **kwargs: Any | None,                                          
+    5694 │   ) -> Output:                                                       
+  ❱ 5695 │   │   return self.bound.invoke(                                      
+    5696 │   │   │   input,                                                     
+    5697 │   │   │   self._merge_configs(config),                               
+    5698 │   │   │   **{**self.kwargs, **kwargs},                               
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:402 in invoke                                             
+                                                                                
+     399 │   │   │   "AIMessage",                                               
+     400 │   │   │   cast(                                                      
+     401 │   │   │   │   "ChatGeneration",                                      
+  ❱  402 │   │   │   │   self.generate_prompt(                                  
+     403 │   │   │   │   │   [self._convert_input(input)],                      
+     404 │   │   │   │   │   stop=stop,                                         
+     405 │   │   │   │   │   callbacks=config.get("callbacks"),                 
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1123 in generate_prompt                                   
+                                                                                
+    1120 │   │   **kwargs: Any,                                                 
+    1121 │   ) -> LLMResult:                                                    
+    1122 │   │   prompt_messages = [p.to_messages() for p in prompts]           
+  ❱ 1123 │   │   return self.generate(prompt_messages, stop=stop, callbacks=ca  
+    1124 │                                                                      
+    1125 │   @override                                                          
+    1126 │   async def agenerate_prompt(                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:933 in generate                                           
+                                                                                
+     930 │   │   for i, m in enumerate(input_messages):                         
+     931 │   │   │   try:                                                       
+     932 │   │   │   │   results.append(                                        
+  ❱  933 │   │   │   │   │   self._generate_with_cache(                         
+     934 │   │   │   │   │   │   m,                                             
+     935 │   │   │   │   │   │   stop=stop,                                     
+     936 │   │   │   │   │   │   run_manager=run_managers[i] if run_managers e  
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_core/language_mo  
+  dels/chat_models.py:1235 in _generate_with_cache                              
+                                                                                
+    1232 │   │   │   │   chunks.append(chunk)                                   
+    1233 │   │   │   result = generate_from_stream(iter(chunks))                
+    1234 │   │   elif inspect.signature(self._generate).parameters.get("run_ma  
+  ❱ 1235 │   │   │   result = self._generate(                                   
+    1236 │   │   │   │   messages, stop=stop, run_manager=run_manager, **kwarg  
+    1237 │   │   │   )                                                          
+    1238 │   │   else:                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/langchain_groq/chat_models  
+  .py:621 in _generate                                                          
+                                                                                
+     618 │   │   │   **params,                                                  
+     619 │   │   │   **kwargs,                                                  
+     620 │   │   }                                                              
+  ❱  621 │   │   response = self.client.create(messages=message_dicts, **param  
+     622 │   │   return self._create_chat_result(response, params)              
+     623 │                                                                      
+     624 │   async def _agenerate(                                              
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/resources/chat/comple  
+  tions.py:461 in create                                                        
+                                                                                
+     458 │   │                                                                  
+     459 │   │     timeout: Override the client-level default timeout for this  
+     460 │   │   """                                                            
+  ❱  461 │   │   return self._post(                                             
+     462 │   │   │   "/openai/v1/chat/completions",                             
+     463 │   │   │   body=maybe_transform(                                      
+     464 │   │   │   │   {                                                      
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1242   
+  in post                                                                       
+                                                                                
+    1239 │   │   opts = FinalRequestOptions.construct(                          
+    1240 │   │   │   method="post", url=path, json_data=body, files=to_httpx_f  
+    1241 │   │   )                                                              
+  ❱ 1242 │   │   return cast(ResponseT, self.request(cast_to, opts, stream=str  
+    1243 │                                                                      
+    1244 │   def patch(                                                         
+    1245 │   │   self,                                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/groq/_base_client.py:1044   
+  in request                                                                    
+                                                                                
+    1041 │   │   │   │   │   err.response.read()                                
+    1042 │   │   │   │                                                          
+    1043 │   │   │   │   log.debug("Re-raising status error")                   
+  ❱ 1044 │   │   │   │   raise self._make_status_error_from_response(err.respo  
+    1045 │   │   │                                                              
+    1046 │   │   │   break                                                      
+    1047                                                                        
+────────────────────────────────────────────────────────────────────────────────
+RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for 
+model `llama-3.3-70b-versatile` in organization `org_01kgd260zcfsr8ar1vkvceahwz`
+service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, 
+Requested 1238. Please try again in 16m56.064s. Need more tokens? Upgrade to Dev
+Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+[NOTE] During task with name 'supervisor' and id 
+'3f36980d-b5d5-558d-e3ea-744cd22f5851'
