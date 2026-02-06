@@ -9,6 +9,24 @@ Traditional E-commerce relies on users manually clicking checkboxes (e.g., ✅ "
 
 ## Architecture
 
+```mermaid
+graph TD
+    User([User Request]) --> UI[Streamlit Frontend]
+    UI --> Orchestrator{LangGraph State Manager}
+    
+    Orchestrator --> Router[Groq LLM Llama-3.3-70B]
+    Router -- Extracts Constraints & Intent --> Orchestrator
+    
+    Orchestrator -- Intent: Search --> Embedder[FastEmbed BAAI/bge-small]
+    Embedder -- Vectors --> Qdrant[(Qdrant Vector DB)]
+    
+    Qdrant -- Hybrid Search --> Supabase[(Supabase PostgreSQL)]
+    Supabase -- Filtered Product Data --> Orchestrator
+    
+    Orchestrator -- Intent: Chat --> LLM[Groq LLM Conversational]
+    LLM --> UI
+```
+
 1. **State Orchestrator (LangGraph):** Manages conversational flow, memory, and cart state across multiple agent nodes.
 2. **The LLM Brain (Groq):** Llama-3.3-70B running at 0.0 temperature processes structured Pydantic outputs to extract exact user constraints (e.g. `max_price_inr: 100`).
 3. **The Vector Engine (Qdrant + FastEmbed):** Embedded high-dimensional product matrices queried for semantic similarity.
